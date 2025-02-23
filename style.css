@@ -31,7 +31,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 18rem 2% 2rem;
+    padding: 10rem 2% 2rem;
 }
 
 .header {
@@ -61,29 +61,28 @@ section {
     font-weight: 700;
 }
 
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
 ol {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: var(--text-color);
-}
-
 #menu-icon {
     font: 3.6rem;
     color: var(--text-color);
-    display: flex;
     display: none;
     
 }
 
 .home {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-content h3 {
@@ -99,6 +98,12 @@ ol {
 
 .home-img {
     animation: floatImage 4s ease-in-out infinite;
+    margin-left: 3rem;
+}
+
+.home-img img {
+    width: 24vw;
+    border-radius: 100%;
 }
 
 @keyframes floatImage {
@@ -133,6 +138,11 @@ ol {
     transition: .5s ease;
 }
 
+.social-media ol {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .social-media a:hover {
     background: var(--main-color);
     color: var(--snd-bg-color);
@@ -145,16 +155,14 @@ ol {
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
-    font: 1.6rem;
+    font-size: 1.6rem;
     color: var(--bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
 }
 
-
-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
+.btn:hover {
+    box-shadow: none;
 }
+
