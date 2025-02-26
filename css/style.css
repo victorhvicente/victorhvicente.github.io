@@ -172,10 +172,13 @@ ol {
     align-items: center;
     gap: 2rem;
     background: var(--snd-bg-color);
+    padding: 5rem 10%;
 }
 
 .sobre img {
-    width: 30vw;
+    width: 20vw;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0.5rem var(--main-color);
 }
 
 .cabecalho {
@@ -195,6 +198,7 @@ ol {
 .sobre-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    line-height: 1.5;
 }
 
 
