@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('active');
     }
 
-    let sections = document.querySelectorAll('section'); // Corrigido o seletor
+    let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
 
     window.onscroll = () => {
@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
             let height = sec.offsetHeight;
             let id = sec.getAttribute('id');
 
-            if (top > offset && top < offset + height) { // Corrigido "to" para "top"
-                navLinks.forEach(link => { // Corrigido "apply" para um loop normal
+            if (top > offset && top < offset + height) { 
+                navLinks.forEach(link => {
                     link.classList.remove('active');
                 });
 
                 let activeLink = document.querySelector(`header nav a[href*="${id}"]`);
-                if (activeLink) activeLink.classList.add('active'); // Evita erro caso o seletor não encontre nada
+                if (activeLink) activeLink.classList.add('active');
             }
         });
 
@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.toggle('sticky', window.scrollY > 100);
     };
 
-    // Remover toggle icone e navbar quando um link for clicado
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             menuIcone.classList.remove('fa-xmark');
