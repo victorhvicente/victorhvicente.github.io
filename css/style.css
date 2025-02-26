@@ -526,7 +526,7 @@ input[type="number"] {
     }
 }
 
-/* Telas até 350px */
+/* Telas até 450px */
 @media (max-width: 450px) {
     html {
         font-size: 50%;
