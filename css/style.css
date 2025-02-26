@@ -170,20 +170,21 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
     background: var(--snd-bg-color);
     padding: 5rem 10%;
 }
 
 .sobre img {
     width: 20vw;
-    border-radius: 10px;
-    box-shadow: 0 0 0 0.5rem var(--main-color);
+    border-radius: 30px;
+    box-shadow: 0 8px 32px var(--main-color);
 }
+
 
 .cabecalho {
     text-align: center;
-    font-size: 4,5rem;
+    font-size: 2.5rem;
 }
 
 .sobre-content h2 {
@@ -201,4 +202,95 @@ ol {
     line-height: 1.5;
 }
 
+.projetos {
+    background: var(--snd-bg-color);
+    text-align: center;
+    padding: 10rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos h2 {
+    margin-bottom: 4rem;
+    font-size: 4em;
+}
+
+.projetos p {
+    margin: 4rem 0;
+    font-size: 2rem;
+}
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projetos-container .projetos-caixa {
+    position: relative;
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.projetos-caixa img {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+    object-fit: cover; /* Mantém a proporção da imagem */
+
+}
+
+.projetos-caixa:hover img {
+    transform: scale(1.1);
+}
+
+.projetos-caixa .projetos-camada {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.projetos-caixa:hover .projetos-camada {
+    transform: translateY(0);
+}
+
+.projetos-camada h4 {
+    font-size: 3rem;
+}
+
+.projetos-camada p {
+    font-size: 1.6rem;
+    margin: .1rem 0 .1rem;
+}
+
+.projetos-camada a {
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.projetos-camada a i {
+    font-size: 2rem;
+    color: var(--snd-bg-color);
+}
 
