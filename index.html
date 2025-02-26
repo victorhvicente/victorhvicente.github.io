@@ -19,9 +19,10 @@
         <nav class="navbar">
 
             <ol>
-                <li><a href="#inicio" class="active">Início</a></li>
+                <li><a href="#home" class="active">Início</a></li>
                 <li><a href="#sobre" class="">Sobre</a></li>
                 <li><a href="#projetos" class="">Projetos</a></li>
+                <li><a href="#contato" class="">Contato</a></li>
             </ol>
         </nav>
     </header>
@@ -69,7 +70,7 @@
         <p>Alguns projetos desenvolvidos durante minha jornada na faculdade.</p>
         <div class="projetos-container">
             <div class="projetos-caixa">
-                <img src="img/print.jpg" alt="">
+                <img src="img/img-projeto1.jpg" alt="">
                 <div class="projetos-camada">
                     <h4>Aplicativo Quiz</h4>
                     <p>Sistema desenvolvido com HTML, CSS e JavaScript</p>
@@ -78,15 +79,46 @@
             </div>
 
             <div class="projetos-caixa">
-                <img src="img/print.jpg" alt="">
+                <img src="img/img-projeto2.jpg" alt="" class="diminuir-img">
                 <div class="projetos-camada">
-                    <h4>Aplicativo Quiz</h4>
-                    <p>Sistema desenvolvido com HTML, CSS e JavaScript</p>
+                    <h4>Contador</h4>
+                    <p>Sistema desenvolvido com JavaScript puro</p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <section class="contato" id="contato">
+        <h2 class="cabecalho">Entre em contato</h2>
+
+        <form action="#">
+            <div class="input-caixa">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-caixa">
+                <input type="number" placeholder="Número Celular">
+                <input type="text" placeholder="Assunto do Email">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem!"> </textarea>
+            <input type="submit" value="Enviar Mensagem" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-texto">
+            <p>&copy; 2025 victorhvicente. Todos os direitos reservados.</p>
+        </div>
+        
+        <div class="footer-iconeTopo">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        
+    </footer>
+    
 </body>
 </html>
