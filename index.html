@@ -95,19 +95,25 @@
     <section class="contato" id="contato">
         <h2 class="cabecalho">Entre em contato</h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/vhvicente99@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> <!-- Redireciona após envio -->
+        
             <div class="input-caixa">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
-
+        
             <div class="input-caixa">
-                <input type="number" placeholder="Número Celular">
-                <input type="text" placeholder="Assunto do Email">
+                <input type="tel" name="celular" placeholder="Número Celular" required>
+                <input type="text" name="assunto" placeholder="Assunto do Email" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem!"> </textarea>
+        
+            <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem!" required></textarea>
+        
             <input type="submit" value="Enviar Mensagem" class="btn">
         </form>
+        
     </section>
 
     <footer class="footer">
