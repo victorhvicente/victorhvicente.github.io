@@ -19,7 +19,6 @@
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <nav class="navbar">
-
             <ol>
                 <li><a href="#home" class="active">Início</a></li>
                 <li><a href="#sobre" class="">Sobre</a></li>
@@ -63,7 +62,6 @@
             </p>
             <p>Sou uma pessoa que tem facilidade para trabalhar em equipe, gosto de ouvir ideias e contribuir com sugestões para encontrar as melhores soluções. Estou sempre em busca de novos desafios que me permitam crescer profissionalmente e agregar valor aos projetos em que me envolvo.</p>
             <p>Se quiser saber mais sobre meu trabalho ou trocar ideias, fique à vontade para entrar em contato! 🚀</p>
-            <!-- <a href="#" class="btn">Leia mais</a> -->
         </div>
     </section>
 
@@ -88,36 +86,50 @@
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="contato" id="contato">
         <h2 class="cabecalho">Entre em contato</h2>
 
+        <!-- FORMULÁRIO USANDO FORMSUBMIT -->
+        <!-- O FormSubmit é um serviço que envia dados do formulário diretamente para o e-mail informado,
+             sem precisar programar backend em PHP, Node, etc. -->
         <form action="https://formsubmit.co/vhvicente99@gmail.com" method="POST">
+            <!-- action = URL do FormSubmit + seu e-mail (para onde as mensagens serão enviadas) -->
+            <!-- method="POST" garante que os dados sejam enviados de forma segura -->
+
             <input type="hidden" name="_captcha" value="true">
-            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> <!-- Redireciona após envio -->
-        
+            <!-- Ativa o sistema anti-SPAM do FormSubmit -->
+
+            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+            <!-- Define para qual página o usuário será redirecionado após o envio -->
+
             <div class="input-caixa">
                 <input type="text" name="nome" placeholder="Nome" required>
+                <!-- Campo obrigatório para nome -->
+
                 <input type="email" name="email" placeholder="Email" required>
+                <!-- Campo obrigatório para e-mail -->
             </div>
-        
+
             <div class="input-caixa">
                 <input type="tel" name="celular" placeholder="Número Celular" required>
+                <!-- Campo obrigatório para telefone -->
+
                 <input type="text" name="assunto" placeholder="Assunto do Email" required>
+                <!-- Campo obrigatório para assunto -->
             </div>
-        
+
             <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem!" required></textarea>
-        
+            <!-- Campo obrigatório para a mensagem -->
+
             <input type="submit" value="Enviar Mensagem" class="btn">
+            <!-- Botão de envio que dispara o FormSubmit -->
         </form>
-        
     </section>
 
     <footer class="footer">
-
         <div class="footer-texto">
             <p>&copy; 2025 victorhvicente. Todos os direitos reservados.</p>
         </div>
@@ -125,8 +137,6 @@
         <div class="footer-iconeTopo">
             <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
-
     </footer>
-    
 </body>
 </html>
