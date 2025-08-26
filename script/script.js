@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('active');
     }
 
-    // Seleciona todas as seções da página
+    // Seleciona todas as seções da página 
     let sections = document.querySelectorAll('section');
     // Seleciona todos os links dentro do nav do header
     let navLinks = document.querySelectorAll('header nav a');
